@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio8</title>
+</head>
+<body>
+    <p>Elabore un algoritmo con un menú simple con las cuatro operaciones básicas: sumar, restar, multiplicar, dividir.</p>
+    <br>
+    <br>
+    <form>
+        Número 1: <input id="num1" type="number"/>
+        Número 2: <input id="num2" type="number"/>
+        <br>
+    <input type="button" value="SUMAR" onclick="sumar()"> 
+    <input type="button" value="RESTAR" onclick="restar()">
+    <br>
+    <input type="button" value="MULTIPLICAR" onclick="multiplicar()">
+    <input type="button" value="DIVIDIR" onclick="dividir()">
+
+    
+    <script>
+        function sumar(){
+                let numero1 =parseInt(document.getElementById("num1").value)
+                let numero2 =parseInt(document.getElementById("num2").value)
+                let resultado
+                
+                resultado=(numero1+numero2);
+                alert('El resultado es '+resultado)
+
+        }
+        function restar(){
+                let numero1 =parseInt(document.getElementById("num1").value)
+                let numero2 =parseInt(document.getElementById("num2").value)
+                let resultado
+                
+                resultado=(numero1-numero2);
+                alert('El resultado es '+resultado)
+
+        }
+        function multiplicar(){
+                let numero1 =parseInt(document.getElementById("num1").value)
+                let numero2 =parseInt(document.getElementById("num2").value)
+                let resultado
+                
+                resultado=(numero1*numero2);
+                alert('El resultado es '+resultado)
+
+        }
+        function dividir(){
+                let numero1 =parseInt(document.getElementById("num1").value)
+                let numero2 =parseInt(document.getElementById("num2").value)
+                let resultado
+                
+                resultado=(numero1/numero2);
+                alert('El resultado es '+resultado)
+
+        }
+
+    </script>
+</body>
+</html>

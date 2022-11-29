@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <script>    
+    let contador=0;
+    var numero=0;
+    var mayores=0;
+    var menores=0;
+    while(contador <10)
+    {
+        numero=prompt('Ingrese un numero')
+        if (numero>=18) {
+            mayores=mayores+1;
+        }
+        else if (numero<18){
+            menores=menores+1;
+        }
+        contador++
+    }
+    alert('La cantidad de numeros mayores es '+mayores+' la cantidad de numero menores es '+menores)
+    </script>
+    
+</body>
+</html>

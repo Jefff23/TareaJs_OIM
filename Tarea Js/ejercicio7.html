@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <script>    
+        let contador=0;
+        var numero=0;
+        var aprobados=0;
+        var reprobados=0;
+        while(contador <10)
+        {
+            numero=prompt('Ingrese su nota')
+            if (numero>=7) {
+                aprobados=aprobados+1;
+            }
+            else if (numero<7){
+                reprobados=reprobados+1;
+            }
+            contador++
+        }
+        alert('La cantidad de aprobados es '+aprobados+' la cantidad de reprobados es '+reprobados)
+        </script>
+</body>
+</html>
